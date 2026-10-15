@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Byte Snake</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>BYTE<span>SNAKE</span></h1>
+      <p class="tagline">Bytes saapidu. Valaru. Suvar la idikaadha.</p>
+    </header>
+
+    <section class="stats">
+      <div class="stat"><span class="label">Score</span><span id="score">0</span></div>
+      <div class="stat"><span class="label">Level</span><span id="level">1</span></div>
+      <div class="stat"><span class="label">Best</span><span id="best">0</span></div>
+    </section>
+
+    <canvas id="c" aria-label="Snake game board"></canvas>
+
+    <p class="msg" id="msg">Start click pannu, apram arrow keys use pannu.</p>
+    <button class="btn" id="startBtn">Start Game</button>
+
+    <div class="pad" aria-label="Controls">
+      <button data-dir="up" class="up">▲</button>
+      <button data-dir="left" class="left">◀</button>
+      <button data-dir="down" class="down">▼</button>
+      <button data-dir="right" class="right">▶</button>
+    </div>
+    <p class="hint">Arrow keys / WASD &nbsp;·&nbsp; Phone la swipe pannu</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
